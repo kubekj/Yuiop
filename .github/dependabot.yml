@@ -1,0 +1,30 @@
+version: 2
+updates:
+  # GitHub Actions
+  - package-ecosystem: github-actions
+    directory: yuiop/
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: ⬆
+  # Python
+  - package-ecosystem: pip
+    directory: yuiop/core
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: ⬆
+  # Docker
+  - package-ecosystem: docker
+    directory: yuiop/
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: ⬆
+  # Node
+  - package-ecosystem: npm
+    directory: yuiop/portal
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: ⬆
